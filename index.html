@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+
+<title>Vynox BrainBoost</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #101827;
+    color: white;
+    padding-bottom: 85px;
+}
+
+header {
+    padding: 22px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #36d6cb;
+}
+
+.logo span {
+    color: white;
+}
+
+.profile {
+    background: #263449;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+
+.welcome {
+    padding: 15px 20px;
+}
+
+.welcome h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #aab7c8;
+    font-size: 14px;
+}
+
+.banner {
+    margin: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #164e63, #312e81);
+    border-radius: 18px;
+}
+
+.banner h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    color: #d5e7f5;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.banner button {
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #36d6cb;
+    color: #101827;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.section {
+    padding: 15px 20px;
+}
+
+.section h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.subject {
+    background: #1c293b;
+    padding: 20px 15px;
+    border-radius: 13px;
+    border: 1px solid #293a50;
+}
+
+.subject .icon {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.subject h4 {
+    margin-bottom: 6px;
+}
+
+.subject p {
+    color: #aab7c8;
+    font-size: 12px;
+}
+
+.progress {
+    background: #1c293b;
+    padding: 18px;
+    border-radius: 13px;
+}
+
+.progress p {
+    color: #aab7c8;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #182437;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 5px;
+    border-top: 1px solid #293a50;
+}
+
+.bottom-nav a {
+    color: #aab7c8;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+}
+
+.bottom-nav a.active {
+    color: #36d6cb;
+}
+
+.notice {
+    margin: 20px;
+    color: #aab7c8;
+    font-size: 12px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VYNOX <span>BrainBoost</span></div>
+    <div class="profile">👤</div>
+</header>
+
+<section class="welcome">
+    <h2>Welcome, Student! 👋</h2>
+    <p>Your journey to success starts here.</p>
+</section>
+
+<section class="banner">
+    <h2>Prepare. Practice. Excel.</h2>
+    <p>
+        Get ready for your JAMB UTME with
+        structured learning and practice.
+    </p>
+    <button onclick="startPractice()">Start Practising →</button>
+</section>
+
+<section class="section">
+    <h3>Your JAMB Subjects</h3>
+
+    <div class="subjects">
+
+        <div class="subject">
+            <div class="icon">📖</div>
+            <h4>English</h4>
+            <p>Language practice</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">🔢</div>
+            <h4>Mathematics</h4>
+            <p>Mathematical practice</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">⚗️</div>
+            <h4>Chemistry</h4>
+            <p>Science practice</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">⚡</div>
+            <h4>Physics</h4>
+            <p>Science practice</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h3>Your Learning Progress</h3>
+
+    <div class="progress">
+        <h4>Keep pushing forward! 🚀</h4>
+        <p>Your learning progress will appear here.</p
